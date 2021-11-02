@@ -40,6 +40,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
+      
+    - name: Cleanup Disk
+      uses: curoky/cleanup-disk-action@v2.0
 
     - name: Initialization environment
       env:
